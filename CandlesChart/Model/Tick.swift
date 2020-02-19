@@ -10,8 +10,8 @@ import Foundation
 
 struct Tick: Codable {
     let s: String
-    let bf: String
-    let af: String
+    let bf: Float
+    let af: Float
     let spr: String
     private let b: String
     private let a: String
@@ -21,7 +21,7 @@ struct Tick: Codable {
     var maxValue: Float { max(aFloat, bFloat) }
     var minValue: Float { min(aFloat, bFloat) }
     
-    init(s: String, bf: String, af: String, spr: String, b: String, a: String) {
+    init(s: String, bf: Float, af: Float, spr: String, b: String, a: String) {
         self.s = s
         self.bf = bf
         self.af = af

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28BE553AF01505726D4730CB /* Pods_CandlesChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BCA539E2B84C6C6AA97338 /* Pods_CandlesChart.framework */; };
+		6A81D27023FC138600A5763E /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A81D26F23FC138600A5763E /* Candle.swift */; };
 		6AFE866923F9297A00D296B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE866823F9297A00D296B3 /* AppDelegate.swift */; };
 		6AFE866D23F9297A00D296B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE866C23F9297A00D296B3 /* ViewController.swift */; };
 		6AFE867023F9297A00D296B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFE866E23F9297A00D296B3 /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08BCA539E2B84C6C6AA97338 /* Pods_CandlesChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandlesChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		151B0FD573D2751F2B44D3C6 /* Pods-CandlesChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlesChart.debug.xcconfig"; path = "Target Support Files/Pods-CandlesChart/Pods-CandlesChart.debug.xcconfig"; sourceTree = "<group>"; };
+		6A81D26F23FC138600A5763E /* Candle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candle.swift; sourceTree = "<group>"; };
 		6AFE866523F9297A00D296B3 /* CandlesChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandlesChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFE866823F9297A00D296B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AFE866C23F9297A00D296B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		6AFE867623F9297D00D296B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AFE867D23F92F8800D296B3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6AFE868023F9308A00D296B3 /* Tick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tick.swift; sourceTree = "<group>"; };
+		7BA577F21DED552FB103598E /* Pods-CandlesChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlesChart.release.xcconfig"; path = "Target Support Files/Pods-CandlesChart/Pods-CandlesChart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BE553AF01505726D4730CB /* Pods_CandlesChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E72D58B6A5C6727857E873B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BCA539E2B84C6C6AA97338 /* Pods_CandlesChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AFE865C23F9297A00D296B3 = {
 			isa = PBXGroup;
 			children = (
 				6AFE866723F9297A00D296B3 /* CandlesChart */,
 				6AFE866623F9297A00D296B3 /* Products */,
+				87ED0AA309D28A0F27B0205C /* Pods */,
+				5E72D58B6A5C6727857E873B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,8 +99,18 @@
 			isa = PBXGroup;
 			children = (
 				6AFE868023F9308A00D296B3 /* Tick.swift */,
+				6A81D26F23FC138600A5763E /* Candle.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		87ED0AA309D28A0F27B0205C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				151B0FD573D2751F2B44D3C6 /* Pods-CandlesChart.debug.xcconfig */,
+				7BA577F21DED552FB103598E /* Pods-CandlesChart.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AFE867923F9297D00D296B3 /* Build configuration list for PBXNativeTarget "CandlesChart" */;
 			buildPhases = (
+				DBCB5DBE6D5646CA2C482E6C /* [CP] Check Pods Manifest.lock */,
 				6AFE866123F9297A00D296B3 /* Sources */,
 				6AFE866223F9297A00D296B3 /* Frameworks */,
 				6AFE866323F9297A00D296B3 /* Resources */,
+				CDC694E1C3D0E8A40B914F5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +181,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CDC694E1C3D0E8A40B914F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandlesChart/Pods-CandlesChart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandlesChart/Pods-CandlesChart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandlesChart/Pods-CandlesChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCB5DBE6D5646CA2C482E6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandlesChart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AFE866123F9297A00D296B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,6 +232,7 @@
 				6AFE866D23F9297A00D296B3 /* ViewController.swift in Sources */,
 				6AFE867E23F92F8800D296B3 /* NetworkService.swift in Sources */,
 				6AFE866923F9297A00D296B3 /* AppDelegate.swift in Sources */,
+				6A81D27023FC138600A5763E /* Candle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +374,7 @@
 		};
 		6AFE867A23F9297D00D296B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151B0FD573D2751F2B44D3C6 /* Pods-CandlesChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +393,7 @@
 		};
 		6AFE867B23F9297D00D296B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA577F21DED552FB103598E /* Pods-CandlesChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
